@@ -1,0 +1,56 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.bg{
+    background-image: url('./images/dev0abt-ee038aaa-adfe-4e21-bee0-3f344d763c46.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: 0; */
+   height: 100vh;
+   width: 100vw; 
+   overflow: hidden;
+}
+.jerry{
+    position: absolute;
+    left: 30px;
+    bottom: 20px;
+}
+.cheese{
+    position: absolute;
+    left: 600px;
+    bottom: 100px;
+}
+.circle{
+    position: absolute;
+    background-color: greenyellow;
+    height: 200px;
+    width: 230px;
+    border-radius: 70%;
+    right: 40px;
+    top: 30px;
+}
+.circle, h1{
+    color: blue;
+    font-size: 50px;
+    align-items:center ;
+    font-family: monospace;
+}
+h1{
+    position: relative;
+    right: -16px;
+}
+#center{
+    position: absolute;
+    top: 60px;
+    right: 55px;
+}
+.play{
+    position: absolute;
+    right: 40px;
+    bottom: 27px;
+}
+.play:hover{
+    background-color: ivory;
+    border-radius: 50%;
+}

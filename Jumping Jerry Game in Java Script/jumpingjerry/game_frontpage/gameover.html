@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gameover.css">
+</head>
+<!-- Game start from frontpage.html inside game_frontpage folder -->
+<body>
+    <div class="bg">
+        <div class="jerry">
+            <img src="./images/- Tom And Jerry.png" alt="">
+        </div>
+        <div class="gameover">
+            GAME OVER!!
+        </div>
+        <div class="help">
+            Help Jerry to collect more cheese. </div>
+        <div class="scoring">
+        Your scoring
+        <div id="gameoverscore">56</div></div>
+        <div>
+            <a href="frontpage.html"><button class="try-again">TRY AGAIN</button></a>
+        </div>
+        <div>
+            <a href="../2nd.html"><button class="continue">CONTINUE</button></a>
+        </div>
+        <div class="cheese">
+            <img src="./images/pngegg(2).png" alt="" height="300px">
+        </div>
+    </div>
+    </div>
+    <script>
+       document.getElementById("gameoverscore").innerHTML = Paramsgetsss();
+       function Paramsgetsss() {
+            const a = window.location.search
+            const b = a.split("=")
+            if (b[1]) {
+                return(b[1])
+                alert(b[1])
+            } else {
+                return("0")
+                alert("No score")
+            }
+        }
+    </script>
+</body>
+
+</html>

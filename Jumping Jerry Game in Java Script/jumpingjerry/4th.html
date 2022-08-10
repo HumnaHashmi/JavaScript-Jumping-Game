@@ -1,0 +1,131 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>The JUMPING JERRY Game</title>  
+</head>  
+<!-- Game start from frontpage.html inside game_frontpage folder -->
+
+<style>
+     *{  
+   padding: 0;  
+   margin: 0;  
+ }  
+ .game{  
+   width: 100vw;  
+   height: 100vh;
+   background-image: url('images/winter.jpg');  
+   background-size: cover;
+   background-repeat: repeat-x;
+   background-position: 0;
+   /* border: 1px solid #000000;   */
+   overflow: hidden;
+ }  
+ #jerry{  
+   width: 150px;  
+   height: 130px;  
+   background-image: url(images/jerry3.png);  
+   background-repeat: no-repeat;
+   background-size: 150px 130px;  
+   position: relative; 
+   left: 26px; 
+   top: 430px;  
+ }  
+ .jump{  
+   animation: jump 0.6s linear;  
+ }  
+ @keyframes jump{  
+   0%{  
+     top: 250px; /*distance from the top of the parent element*/  
+   }  
+   30%{  
+     top:115px;  
+    
+   }  
+   50%{  
+     top: 70px;  
+    
+   }  
+   80%{  
+     top: 115px;  
+     
+   }  
+   100%{  
+     top:250px;
+   }  
+ }  
+ #cactus{  
+   width: 80px;  
+   height: 110px;  
+   position: relative;  
+   top: 330px;  
+   left: 580px;  
+   background-image: url(images/toppng.com-snowman-467x600.png);  
+   background-repeat: no-repeat;
+   background-size: 80px 110px;  
+   animation: cactus-block 1.5s infinite linear;  
+ }  
+ @keyframes cactus-block{  
+   0%{  
+     left: 1000px;  
+   }  
+   100%{  
+     left: -20px;  
+   }  
+ }  
+
+ .displaycheese{
+    position: absolute;
+    right: 96px;
+    top: 28px;
+}
+.displayscore{
+    font-size: 55px;
+    position: absolute;
+    top: 19px;
+    right: 50px;
+}
+.speaker,.home{
+    position: absolute;
+    left: 23px; 
+}
+.speaker{  top: 75px; }
+.home{top: 23px;}
+
+#cheese{
+    background-image: url('images/cheese.png');
+    height: 50px;
+    position: relative;
+    top: 10px;
+    left: 1100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: cactus-block 1.5s infinite linear; 
+}
+</style>
+<body>  
+  <div class="game">  
+    <div id="jerry"></div>  
+    <div id="cactus"></div>  
+    <div id="cheese"></div>
+  </div>  
+
+  <div class="score">
+    <div class="displaycheese"><img src="images/cheese.png" alt="" height="50px"></div>
+    <div class="displayscore" id="displayScore">0</div>
+    <div class="speaker">
+        <img src="images/pngegg (1).png" alt=""height="80px">
+    </div>
+    
+</div>
+<div class="home">
+<a href="game_frontpage/frontpage.html">
+  <img src="images/299061_house_icon (1).png" alt="" height="66px">
+</a>
+</div>
+</div>
+  <script src="4th.js"></script>  
+</body>  
+</html>  
